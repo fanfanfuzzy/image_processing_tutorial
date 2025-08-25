@@ -65,6 +65,8 @@ seaborn>=0.11.0
 
 ## Installation / インストール
 
+### Local Environment / ローカル環境
+
 ```bash
 # Clone the repository / リポジトリをクローン
 git clone <repository-url>
@@ -77,7 +79,32 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
+### Google Colab Environment / Google Colab環境
+
+1. **Upload to Google Drive / Google Driveにアップロード**
+   - Download this repository as a ZIP file / このリポジトリをZIPファイルとしてダウンロード
+   - Extract it to your Google Drive as `image_processing_tutorial-main` / Google Driveに`image_processing_tutorial-main`として展開
+   - Alternatively, clone directly to Google Drive using Colab terminal / または、Colabターミナルを使用してGoogle Driveに直接クローン
+
+2. **Open notebooks in Google Colab / Google Colabでノートブックを開く**
+   - Navigate to the notebook file in Google Drive / Google Driveでノートブックファイルに移動
+   - Right-click and select "Open with" → "Google Colaboratory" / 右クリックして「アプリで開く」→「Google Colaboratory」を選択
+   - Or use the direct Colab URL: `https://colab.research.google.com/drive/your-file-id` / または直接ColabのURLを使用
+
+3. **Run the setup cell / セットアップセルを実行**
+   - Each notebook contains a Google Colab setup cell at the beginning / 各ノートブックの冒頭にGoogle Colabセットアップセルが含まれています
+   - Run this cell first to mount Google Drive and configure paths / 最初にこのセルを実行してGoogle Driveをマウントし、パスを設定
+   - The setup will automatically detect if you're running in Colab / セットアップは自動的にColabで実行されているかを検出します
+
+4. **Install additional packages if needed / 必要に応じて追加パッケージをインストール**
+   ```python
+   # Run this in a Colab cell if packages are missing / パッケージが不足している場合はColabセルで実行
+   !pip install opencv-python scikit-image
+   ```
+
 ## Usage / 使用方法
+
+### Local Jupyter Environment / ローカルJupyter環境
 
 1. Start with `01_image_filtering.ipynb` to learn basic image processing techniques
    `01_image_filtering.ipynb`から始めて基本的な画像処理技術を学習
@@ -94,12 +121,34 @@ jupyter notebook
 5. Finish with `05_multilayer_perceptron.ipynb` for advanced neural network classification
    `05_multilayer_perceptron.ipynb`で高度なニューラルネットワーク分類を完了
 
+### Google Colab Environment / Google Colab環境
+
+1. **First-time setup / 初回セットアップ**
+   - Upload the tutorial folder to Google Drive as `image_processing_tutorial-main`
+   - Google Driveにチュートリアルフォルダを`image_processing_tutorial-main`としてアップロード
+
+2. **For each notebook / 各ノートブックについて**
+   - Open the notebook in Google Colab / Google Colabでノートブックを開く
+   - **IMPORTANT**: Run the first cell (Google Colab Setup) before any other cells
+   - **重要**: 他のセルを実行する前に最初のセル（Google Colabセットアップ）を実行
+   - Follow the same tutorial sequence as local environment / ローカル環境と同じチュートリアル順序に従う
+
+3. **Troubleshooting / トラブルシューティング**
+   - If imports fail, verify the folder name is exactly `image_processing_tutorial-main`
+   - インポートが失敗する場合、フォルダ名が正確に`image_processing_tutorial-main`であることを確認
+   - If Google Drive mounting fails, restart the runtime and try again
+   - Google Driveマウントが失敗する場合、ランタイムを再起動して再試行
+   - Some packages may need manual installation: `!pip install package-name`
+   - 一部のパッケージは手動インストールが必要な場合があります: `!pip install package-name`
+
 ## Key Features / 主な特徴
 
 - **Bilingual documentation** (Japanese/English) / **二言語対応**（日本語/英語）
 - **Hands-on examples** with real image data / 実際の画像データを使った**実践的な例**
 - **Scientific visualization** with proper English labels / 適切な英語ラベルによる**科学的可視化**
 - **Complete implementations** from basic to advanced techniques / 基礎から高度な技術まで**完全な実装**
+- **Google Colab compatibility** for cloud-based learning / クラウドベース学習のための**Google Colab対応**
+- **Automatic environment detection** and setup / **自動環境検出**とセットアップ
 
 ## References / 参考文献
 
