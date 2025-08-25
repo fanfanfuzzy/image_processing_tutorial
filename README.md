@@ -44,7 +44,7 @@ This repository contains a comprehensive Python tutorial for image analysis cove
 
 - Sinusoidal boundary classification problem / 正弦波境界分類問題
 - Linear vs nonlinear model comparison / 線形vs非線形モデル比較
-- TensorFlow/Keras MLP implementation / TensorFlow/Keras MLP実装
+- PyTorch MLP implementation / PyTorch MLP実装
 - Decision boundary visualization / 決定境界可視化
 - Backpropagation and loss evolution / バックプロパゲーションと損失変化
 
@@ -59,7 +59,8 @@ opencv-python>=4.5.0
 scipy>=1.7.0
 jupyter>=1.0.0
 requests>=2.25.0
-tensorflow>=2.8.0
+torch>=1.12.0
+torchvision>=0.13.0
 seaborn>=0.11.0
 ```
 
